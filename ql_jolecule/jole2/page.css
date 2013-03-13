@@ -1,0 +1,253 @@
+a, a:visited { 
+  text-decoration:none;
+  color:#557;
+}
+a:hover {
+  text-decoration:underline;
+}
+body {
+  background-color:black; 
+  font-family:Helvetica, sans-serif;
+  font-size:10px; 
+  color:#333; 
+  padding:0;
+  margin:0;
+}
+.jolecule-little-header {
+  margin-bottom:8px;
+}
+#jolecule-header {
+  background-color:black;
+  width:100%;
+  margin:0;
+  padding:10px 25px 10px 25px;
+  display:table;
+}
+#jolecule-header, #jolecule-header a {
+  color:#777;
+}
+#jolecule-tagline {
+  text-align:left;
+  font-size:14px;
+  font-family:helvetica; 
+  letter-spacing:0.2em;
+  color:#666;
+  display:table-cell;
+}
+#jolecule-tagline a, #jolecule-tagline a:visited {
+  color:#AAA;
+}
+#jolecule-menu {
+  font-family:helvetica; 
+  letter-spacing:0.1em;
+  font-size:12px;
+  text-align:right;
+  display:table-cell;
+}
+#jolecule-content {
+  width:auto;
+  margin:0;
+  border-spacing:0;
+  padding-left:20px; 
+  padding-right:20px;
+  padding-top:15px;
+  background-color:black;
+  background-image:url('gradient.png');
+  background-repeat:repeat-x;
+}
+#jolecule-sequence-container {
+  float:left;
+  background-color:#999;
+  width:120px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:0;
+  padding-bottom:0px;
+}
+#sequence {
+  margin:0px; 
+  padding:0;
+  font-family:'Andale Mono', 
+               Monaco, 
+               ProFont, 
+               'Bitstream Vera Sans Mono', 
+               'American Typewriter', 
+               monospace;
+  font-size:12px;
+  overflow-x:hidden; 
+  overflow-y:auto;
+}
+#jolecule-protein-container {
+  float:left;
+  padding-left:10px; 
+  padding-right:10px;
+}
+#jolecule-protein-display {
+  margin:0;
+  padding:0;
+  font-size:14px;
+  line-height:1.5em;
+  letter-spacing:0.1em;
+  color:#666;
+}
+#jolecule-display-options {
+  width:auto;
+  padding-bottom:5px;
+}
+#jolecule-views-container {
+  float:left;
+  background-color:#999;
+  width:300px;
+  padding-left:10px;
+  padding-right:10px;
+}
+#views {
+  overflow-x:hidden; 
+  overflow-y:scroll;
+}
+#jolecule-views-header, #jolecule-sequence-header {
+  width:auto;
+  padding-top:10px;
+  padding-bottom:15px;
+  text-align:center;
+  font-size:16px; 
+  font-weight:bold;
+  letter-spacing:0.1em;
+  color:#888;
+  line-height:25px;
+}
+.selected {
+  border:1px dotted #CCC;
+}
+.unselected {
+  border:1px solid #999;
+}
+.annotation_text {
+  font-size:12px;
+  font-family:Helvetica, sans-serif;
+  letter-spacing:0.1em;
+  /*line-height:1.5em;*/
+}
+.goto_button, a.goto_button:link, 
+a.goto_button:visited {
+  color:#666;
+  text-decoration:none;
+  font-size:14px;
+}
+.goto_button {
+  display:block;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  background-color:#A1A8D3;
+  text-align:center;
+  width:20px;
+  padding-top:4px;
+  padding-bottom:6px;
+  padding-left:5px;
+  padding-right:5px;
+  margin-right:10px;
+  font-weight:normal;
+}
+.jolecule-button, a.jolecule-button:link, 
+a.jolecule-button:visited {
+  color:#666;
+  text-decoration:none;
+  font-size:10px;
+  font-weight:normal;
+}
+.jolecule-button {
+  -moz-border-radius:5px;
+  border-radius:5px;
+  background-color:#A1A8D3;
+  text-align:center;
+  padding-top:4px;
+  padding-bottom:6px;
+  padding-left:5px;
+  padding-right:5px;
+}
+.jolecule-onscreen-control {
+  -moz-border-radius:5px;
+  border-radius:5px;
+  font-size:10px;
+  background-color:#CCC;
+  color:#999;
+  text-align:center;
+  padding:2px 2px 4px 2px;
+  line-height:2.5em;
+}
+td {
+  vertical-align:top;
+  padding:0;
+  margin:0;
+}
+.author {
+  padding-top:0.em;
+  font-size:10px;
+  letter-spacing:0.1em;
+  color:#776;
+  padding-left:15px;
+  letter-spacing:0.1em;
+  font-weight:normal;
+}
+.nav, a.nav, a.nav:visited {
+  padding:0;
+  font-size:10px;
+  color:#779;
+  letter-spacing:0.1em;
+  font-weight:normal;
+}
+#jolecule-footer {
+  width:auto;
+  vertical-align:bottom; 
+  text-align:right;  
+  color:#666;
+  font-size:12px;
+  letter-spacing:0.1em;
+  margin:0;
+  padding:12px 5px 5px 5px;
+}
+
+.mobile-dialog {
+  background-color:#222;
+  padding:10px;
+  border:2px solid #444;
+}
+.mobile-textbox {
+  font-size:12px;
+  font-family:Helvetica, sans-serif;
+  letter-spacing:0.1em;
+  line-height:1em;
+}
+.mobile-textarea {
+  font-size:12px;
+  letter-spacing:0.1em;
+  font-family:Helvetica, sans-serif;
+  font-color:#333;
+  background-color:#888;
+  margin-top:0.5em;
+  margin-bottom:1em;
+}
+
+a.mobile-button,
+a.mobile-button:link,
+a.mobile-button:visited {
+  background-color:#888;
+  color:#444!important; 
+  font-family:helvetica; 
+  letter-spacing:0.1em;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:normal;
+}
+a.mobile-button:active {
+  background-color:#F99;
+}
+.mobile-button {
+  -moz-border-radius:3px;
+  border-radius:3px;
+  text-align:center;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-left:5px;
+  padding-right:5px;
+}

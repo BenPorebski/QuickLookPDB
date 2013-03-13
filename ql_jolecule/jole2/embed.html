@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <link rel="stylesheet" type="text/css" href="mobile.css" />
+ 
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.scrollTo.js"></script>
+
+    <script type="text/javascript" src="util.js"></script> 
+    <script type="text/javascript" src="v3.js"></script> 
+    <script type="text/javascript" src="canvaswidget.js"></script> 
+    <script type="text/javascript" src="protein.js"></script> 
+    <script type="text/javascript" src="proteindisplay.js"></script> 
+    <script type="text/javascript" src="embedjolecule.js"></script> 
+    <script type="text/javascript" src="dataserver.js"></script> 
+    <script>
+      $(document).ready(
+        function() {
+
+          var pdb_data = %@;
+
+          register_global_animation_loop(
+            new EmbedJolecule(
+              '', // pdb_id
+              '',  // view_id
+              '#mobile-body', // html tag
+              new DataServer(pdb_data), // type of data server
+              '%@', // height of the meta data text area
+              'Loading PDB file...', // Loading msg
+              'Failed to load PDB.', // Loading failure msg
+              '%@' // Meta data text
+            )
+          );
+        }
+      );
+    </script>
+
+  </head>
+
+  <body>
+    <div id="mobile-body"; float:center;"></div>
+  </body>
+</html>        

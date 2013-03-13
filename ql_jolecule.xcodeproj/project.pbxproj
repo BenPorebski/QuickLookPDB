@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51C9FC216A76DB8007BFA2A /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51C9FC116A76DB8007BFA2A /* QuickLook.framework */; };
+		B51C9FC416A76DB8007BFA2A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51C9FC316A76DB8007BFA2A /* ApplicationServices.framework */; };
+		B51C9FC616A76DB8007BFA2A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51C9FC516A76DB8007BFA2A /* CoreServices.framework */; };
+		B51C9FC816A76DB8007BFA2A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51C9FC716A76DB8007BFA2A /* CoreFoundation.framework */; };
+		B51C9FCE16A76DB8007BFA2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B51C9FCC16A76DB8007BFA2A /* InfoPlist.strings */; };
+		B51C9FD016A76DB8007BFA2A /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B51C9FCF16A76DB8007BFA2A /* GenerateThumbnailForURL.m */; };
+		B51C9FD216A76DB8007BFA2A /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B51C9FD116A76DB8007BFA2A /* GeneratePreviewForURL.m */; };
+		B51C9FD416A76DB8007BFA2A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B51C9FD316A76DB8007BFA2A /* main.c */; };
+		B5B7E40116CF53FA00B93078 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7E40016CF53FA00B93078 /* Foundation.framework */; };
+		B5B7E40316CF540500B93078 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7E40216CF540500B93078 /* WebKit.framework */; };
+		B5B7E47D16CF698D00B93078 /* canvaswidget.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E46316CF698D00B93078 /* canvaswidget.js */; };
+		B5B7E48616CF698D00B93078 /* embed.html in Resources */ = {isa = PBXBuildFile; fileRef = B5B7E46D16CF698D00B93078 /* embed.html */; };
+		B5B7E48716CF698D00B93078 /* embedjolecule.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E46E16CF698D00B93078 /* embedjolecule.js */; };
+		B5B7E48816CF698D00B93078 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B7E46F16CF698D00B93078 /* gradient.png */; };
+		B5B7E48916CF698D00B93078 /* jolecule.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E47016CF698D00B93078 /* jolecule.js */; };
+		B5B7E48A16CF698D00B93078 /* jquery.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E47116CF698D00B93078 /* jquery.js */; };
+		B5B7E48B16CF698D00B93078 /* jquery.scrollTo.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E47216CF698D00B93078 /* jquery.scrollTo.js */; };
+		B5B7E48C16CF698D00B93078 /* mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = B5B7E47316CF698D00B93078 /* mobile.css */; };
+		B5B7E48D16CF698D00B93078 /* page.css in Resources */ = {isa = PBXBuildFile; fileRef = B5B7E47416CF698D00B93078 /* page.css */; };
+		B5B7E48E16CF698D00B93078 /* protein.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E47516CF698D00B93078 /* protein.js */; };
+		B5B7E48F16CF698D00B93078 /* proteindisplay.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E47616CF698D00B93078 /* proteindisplay.js */; };
+		B5B7E49116CF698D00B93078 /* util.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E47816CF698D00B93078 /* util.js */; };
+		B5B7E49216CF698D00B93078 /* v3.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E47916CF698D00B93078 /* v3.js */; };
+		B5B7E49316CF6D9800B93078 /* dataserver.js in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E46C16CF698D00B93078 /* dataserver.js */; };
+		B5B7E49816D451E800B93078 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B7E49616D0653E00B93078 /* common.c */; };
+		B5B7E49916D451EA00B93078 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B7E49416D0652B00B93078 /* common.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B51C9FBE16A76DB8007BFA2A /* ql_jolecule.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ql_jolecule.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51C9FC116A76DB8007BFA2A /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		B51C9FC316A76DB8007BFA2A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		B51C9FC516A76DB8007BFA2A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		B51C9FC716A76DB8007BFA2A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B51C9FCB16A76DB8007BFA2A /* ql_jolecule-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ql_jolecule-Info.plist"; sourceTree = "<group>"; };
+		B51C9FCD16A76DB8007BFA2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B51C9FCF16A76DB8007BFA2A /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		B51C9FD116A76DB8007BFA2A /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		B51C9FD316A76DB8007BFA2A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B51C9FD516A76DB8007BFA2A /* ql_jolecule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ql_jolecule-Prefix.pch"; sourceTree = "<group>"; };
+		B5B7E40016CF53FA00B93078 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5B7E40216CF540500B93078 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B5B7E46316CF698D00B93078 /* canvaswidget.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = canvaswidget.js; sourceTree = "<group>"; };
+		B5B7E46C16CF698D00B93078 /* dataserver.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dataserver.js; sourceTree = "<group>"; };
+		B5B7E46D16CF698D00B93078 /* embed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = embed.html; sourceTree = "<group>"; };
+		B5B7E46E16CF698D00B93078 /* embedjolecule.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = embedjolecule.js; sourceTree = "<group>"; };
+		B5B7E46F16CF698D00B93078 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient.png; sourceTree = "<group>"; };
+		B5B7E47016CF698D00B93078 /* jolecule.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jolecule.js; sourceTree = "<group>"; };
+		B5B7E47116CF698D00B93078 /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		B5B7E47216CF698D00B93078 /* jquery.scrollTo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.scrollTo.js; sourceTree = "<group>"; };
+		B5B7E47316CF698D00B93078 /* mobile.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mobile.css; sourceTree = "<group>"; };
+		B5B7E47416CF698D00B93078 /* page.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = page.css; sourceTree = "<group>"; };
+		B5B7E47516CF698D00B93078 /* protein.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = protein.js; sourceTree = "<group>"; };
+		B5B7E47616CF698D00B93078 /* proteindisplay.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = proteindisplay.js; sourceTree = "<group>"; };
+		B5B7E47816CF698D00B93078 /* util.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = util.js; sourceTree = "<group>"; };
+		B5B7E47916CF698D00B93078 /* v3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = v3.js; sourceTree = "<group>"; };
+		B5B7E49416D0652B00B93078 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		B5B7E49616D0653E00B93078 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B51C9FB916A76DB8007BFA2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B7E40316CF540500B93078 /* WebKit.framework in Frameworks */,
+				B5B7E40116CF53FA00B93078 /* Foundation.framework in Frameworks */,
+				B51C9FC216A76DB8007BFA2A /* QuickLook.framework in Frameworks */,
+				B51C9FC416A76DB8007BFA2A /* ApplicationServices.framework in Frameworks */,
+				B51C9FC616A76DB8007BFA2A /* CoreServices.framework in Frameworks */,
+				B51C9FC816A76DB8007BFA2A /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51C9FB116A76DB7007BFA2A = {
+			isa = PBXGroup;
+			children = (
+				B51C9FC916A76DB8007BFA2A /* ql_jolecule */,
+				B51C9FC016A76DB8007BFA2A /* Frameworks */,
+				B51C9FBF16A76DB8007BFA2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B51C9FBF16A76DB8007BFA2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51C9FBE16A76DB8007BFA2A /* ql_jolecule.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B51C9FC016A76DB8007BFA2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7E40216CF540500B93078 /* WebKit.framework */,
+				B5B7E40016CF53FA00B93078 /* Foundation.framework */,
+				B51C9FC116A76DB8007BFA2A /* QuickLook.framework */,
+				B51C9FC316A76DB8007BFA2A /* ApplicationServices.framework */,
+				B51C9FC516A76DB8007BFA2A /* CoreServices.framework */,
+				B51C9FC716A76DB8007BFA2A /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B51C9FC916A76DB8007BFA2A /* ql_jolecule */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7E45F16CF698D00B93078 /* jole2 */,
+				B51C9FCF16A76DB8007BFA2A /* GenerateThumbnailForURL.m */,
+				B51C9FD116A76DB8007BFA2A /* GeneratePreviewForURL.m */,
+				B51C9FD316A76DB8007BFA2A /* main.c */,
+				B5B7E49616D0653E00B93078 /* common.c */,
+				B5B7E49416D0652B00B93078 /* common.h */,
+				B51C9FCA16A76DB8007BFA2A /* Supporting Files */,
+			);
+			path = ql_jolecule;
+			sourceTree = "<group>";
+		};
+		B51C9FCA16A76DB8007BFA2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B51C9FCB16A76DB8007BFA2A /* ql_jolecule-Info.plist */,
+				B51C9FCC16A76DB8007BFA2A /* InfoPlist.strings */,
+				B51C9FD516A76DB8007BFA2A /* ql_jolecule-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5B7E45F16CF698D00B93078 /* jole2 */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7E46316CF698D00B93078 /* canvaswidget.js */,
+				B5B7E46C16CF698D00B93078 /* dataserver.js */,
+				B5B7E46D16CF698D00B93078 /* embed.html */,
+				B5B7E46E16CF698D00B93078 /* embedjolecule.js */,
+				B5B7E46F16CF698D00B93078 /* gradient.png */,
+				B5B7E47016CF698D00B93078 /* jolecule.js */,
+				B5B7E47116CF698D00B93078 /* jquery.js */,
+				B5B7E47216CF698D00B93078 /* jquery.scrollTo.js */,
+				B5B7E47316CF698D00B93078 /* mobile.css */,
+				B5B7E47416CF698D00B93078 /* page.css */,
+				B5B7E47516CF698D00B93078 /* protein.js */,
+				B5B7E47616CF698D00B93078 /* proteindisplay.js */,
+				B5B7E47816CF698D00B93078 /* util.js */,
+				B5B7E47916CF698D00B93078 /* v3.js */,
+			);
+			path = jole2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B51C9FBA16A76DB8007BFA2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B7E49916D451EA00B93078 /* common.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B51C9FBD16A76DB8007BFA2A /* ql_jolecule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51C9FD816A76DB8007BFA2A /* Build configuration list for PBXNativeTarget "ql_jolecule" */;
+			buildPhases = (
+				B51C9FB816A76DB8007BFA2A /* Sources */,
+				B51C9FB916A76DB8007BFA2A /* Frameworks */,
+				B51C9FBA16A76DB8007BFA2A /* Headers */,
+				B51C9FBB16A76DB8007BFA2A /* Resources */,
+				B51C9FBC16A76DB8007BFA2A /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ql_jolecule;
+			productName = ql_jolecule;
+			productReference = B51C9FBE16A76DB8007BFA2A /* ql_jolecule.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51C9FB316A76DB7007BFA2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B51C9FB616A76DB7007BFA2A /* Build configuration list for PBXProject "ql_jolecule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B51C9FB116A76DB7007BFA2A;
+			productRefGroup = B51C9FBF16A76DB8007BFA2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B51C9FBD16A76DB8007BFA2A /* ql_jolecule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B51C9FBB16A76DB8007BFA2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51C9FCE16A76DB8007BFA2A /* InfoPlist.strings in Resources */,
+				B5B7E48616CF698D00B93078 /* embed.html in Resources */,
+				B5B7E48816CF698D00B93078 /* gradient.png in Resources */,
+				B5B7E48C16CF698D00B93078 /* mobile.css in Resources */,
+				B5B7E48D16CF698D00B93078 /* page.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		B51C9FBC16A76DB8007BFA2A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B51C9FB816A76DB8007BFA2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51C9FD016A76DB8007BFA2A /* GenerateThumbnailForURL.m in Sources */,
+				B51C9FD216A76DB8007BFA2A /* GeneratePreviewForURL.m in Sources */,
+				B51C9FD416A76DB8007BFA2A /* main.c in Sources */,
+				B5B7E47D16CF698D00B93078 /* canvaswidget.js in Sources */,
+				B5B7E48716CF698D00B93078 /* embedjolecule.js in Sources */,
+				B5B7E48916CF698D00B93078 /* jolecule.js in Sources */,
+				B5B7E48A16CF698D00B93078 /* jquery.js in Sources */,
+				B5B7E48B16CF698D00B93078 /* jquery.scrollTo.js in Sources */,
+				B5B7E48E16CF698D00B93078 /* protein.js in Sources */,
+				B5B7E48F16CF698D00B93078 /* proteindisplay.js in Sources */,
+				B5B7E49116CF698D00B93078 /* util.js in Sources */,
+				B5B7E49216CF698D00B93078 /* v3.js in Sources */,
+				B5B7E49316CF6D9800B93078 /* dataserver.js in Sources */,
+				B5B7E49816D451E800B93078 /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B51C9FCC16A76DB8007BFA2A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51C9FCD16A76DB8007BFA2A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B51C9FD616A76DB8007BFA2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B51C9FD716A76DB8007BFA2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B51C9FD916A76DB8007BFA2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ql_jolecule/ql_jolecule-Prefix.pch";
+				INFOPLIST_FILE = "ql_jolecule/ql_jolecule-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		B51C9FDA16A76DB8007BFA2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ql_jolecule/ql_jolecule-Prefix.pch";
+				INFOPLIST_FILE = "ql_jolecule/ql_jolecule-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B51C9FB616A76DB7007BFA2A /* Build configuration list for PBXProject "ql_jolecule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51C9FD616A76DB8007BFA2A /* Debug */,
+				B51C9FD716A76DB8007BFA2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51C9FD816A76DB8007BFA2A /* Build configuration list for PBXNativeTarget "ql_jolecule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51C9FD916A76DB8007BFA2A /* Debug */,
+				B51C9FDA16A76DB8007BFA2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B51C9FB316A76DB7007BFA2A /* Project object */;
+}
