@@ -1,2 +1,2 @@
-jolecule-quicklook-plugin
+QuickLookPDB
 =========================
